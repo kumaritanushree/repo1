@@ -1,0 +1,1 @@
+These programs are created and tested in ubuntu 17.10. To compile the programs GLUT library should have been installed. Some Programs have make use of C++ STL, so they have to compile with C++ compiler, rest of them can be compiled using any c compiler. The Programs are as a part of my semester project.
