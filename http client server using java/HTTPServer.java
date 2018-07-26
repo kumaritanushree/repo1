@@ -8,7 +8,7 @@ class HTTPServer extends Thread {
   static File docroot;
   static String indexfile = "index.html";
   
-  public Server(Socket s) {
+  public HTTPServer(Socket s) {
     theConnection = s;
   }
 
