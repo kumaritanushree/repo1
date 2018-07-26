@@ -2,7 +2,7 @@ import java.net.*;
 import java.io.*;
 import java.util.*;
 
-class Server extends Thread {
+class HTTPServer extends Thread {
 
   Socket theConnection;
   static File docroot;
@@ -41,7 +41,7 @@ class Server extends Thread {
       System.out.println("Document Root:" + docroot);
       while (true) {
         // NOTE:  a new thread is started for each request
-        jhttp j = new jhttp(ss.accept());
+        HTTPServer j = new HTTPServer(ss.accept());
         j.start();
       }
     }
